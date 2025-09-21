@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import CookieBanner from "@/components/cookie-banner";
 
 export const metadata: Metadata = {
   title: "Kundenmagnetapp",
@@ -11,7 +12,11 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="de">
-      <body>{children}</body>
+      <body>
+        {children}
+        {/* TTDSG Cookie Banner */}
+        <CookieBanner />
+      </body>
     </html>
   );
 }
