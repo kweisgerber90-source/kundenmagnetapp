@@ -5,7 +5,7 @@ import { useCallback, useEffect, useMemo, useState } from "react";
 export type ConsentCategory = "essential" | "analytics" | "marketing";
 
 export type ConsentState = {
-  essential: true; // essential is always true by TTDSG
+  essential: boolean; // essential is always true by TTDSG
   analytics: boolean;
   marketing: boolean;
   timestamp?: string; // ISO
