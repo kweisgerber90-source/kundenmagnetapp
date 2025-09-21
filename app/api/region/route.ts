@@ -1,3 +1,5 @@
+// app/api/region/route.ts
+
 export const config = {
   runtime: 'edge',
   regions: ['fra1'], // Frankfurt
