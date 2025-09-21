@@ -1,7 +1,10 @@
 // app/api/region/route.ts
 
+// Указываем, что это Edge Runtime
 export const runtime = "edge";
-export const preferredRegion = ["fra1"]; // Frankfurt
+
+// Указываем предпочтительный регион (Франкфурт)
+export const preferredRegion = ["fra1"];
 
 export async function GET() {
   return new Response(
